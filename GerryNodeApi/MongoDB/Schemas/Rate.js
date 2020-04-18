@@ -6,12 +6,12 @@ const rateSchema = new mongoose.Schema({
     ShortDescription: { type: String, maxlength: 500 },
     LongDescription: { type: String, maxlength: 8000 },
     RatePercentage: { 
-        type: Schema.Types.Decimal128, 
+        type: mongoose.Schema.Types.Decimal128, 
         default: 0, 
         required: function(){ return this.UsePercentage } 
     },
     RateAmount: { 
-        type: Schema.Types.Decimal128, 
+        type: mongoose.Schema.Types.Decimal128, 
         default: 0, 
         required: function(){ return !this.UsePercentage } 
     },

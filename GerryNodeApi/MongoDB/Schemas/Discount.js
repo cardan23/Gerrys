@@ -13,12 +13,12 @@ const discountSchema = new mongoose.Schema({
     EndDate: { type: Date, default: null },
     isPublished: { type: Boolean, default: false },
     DiscountPercentage: { 
-        type: Schema.Types.Decimal128, 
+        type: mongoose.Schema.Types.Decimal128, 
         default: 0, 
         required: function(){ return this.UsePercentage } 
     },
     DiscountAmount: {
-         type: Schema.Types.Decimal128, 
+         type: mongoose.Schema.Types.Decimal128, 
          default: 0, 
          required: function(){ return !this.UsePercentage } 
     },

@@ -14,7 +14,7 @@ const customerSchema = new mongoose.Schema({
         type: String,
         maxlength: 5000
     }],
-    Quality: { type: Schema.Types.Decimal128, min: 0 },
+    Quality: { type: mongoose.Schema.Types.Decimal128, min: 0 },
     ShortDescription: { type: String, maxlength: 200 },
     Gender: { type: String, required: true, enum: [ 'Male', 'Female'] },
     DateOfBirth: { type: Date },

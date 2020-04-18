@@ -8,7 +8,7 @@ const priceHistorySchema = new mongoose.Schema({
         ref: 'Service',
         required: true
     },
-    Price: { type: Schema.Types.Decimal128, required: true, min: 0 },
+    Price: { type: mongoose.Schema.Types.Decimal128, required: true, min: 0 },
     
 });
 

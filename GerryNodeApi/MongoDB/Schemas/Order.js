@@ -12,9 +12,9 @@ const orderSchema = new mongoose.Schema({
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Service'
     }],
-    TotalOrder: { type: Schema.Types.Decimal128, min: 0 },
-    TotalTaxes: { type: Schema.Types.Decimal128, min: 0 },
-    OrderSubtotal: { type: Schema.Types.Decimal128, min: 0 },
+    TotalOrder: { type: mongooseSchema.Types.Decimal128, min: 0 },
+    TotalTaxes: { type: mongoose.Schema.Types.Decimal128, min: 0 },
+    OrderSubtotal: { type: mongoose.Schema.Types.Decimal128, min: 0 },
     Status: { type: String, maxlength: 50 },
     CustomerId: {
         type: mongoose.Schema.Types.ObjectId,
