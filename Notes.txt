@@ -1,0 +1,14 @@
+1. Set Enviroment variables
+
+File: 
+    ExpressApi/config/custom-enviroment-variables.json
+
+    //TODO: Set values as enviroment variables
+    // with the next command: export user_database=password
+
+2. 
+
+File:
+    ExpressApi/init/init.json
+
+    //TODO: Pass user and password parmethers for mongodb authentication

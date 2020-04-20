@@ -1,0 +1,10 @@
+{
+    "database_account": {
+        "user_database": "user_database",
+        "password_database": "password_database"
+    },
+    "email_account":{
+        "user_email": "user_email",
+        "user_password": "password_email"
+    }
+}
